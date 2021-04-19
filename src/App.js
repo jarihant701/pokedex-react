@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <Link to="/" className="Link">
         <Header />
       </Link>
