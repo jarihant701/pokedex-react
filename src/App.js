@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { HashRouter, Route, Switch, Link } from "react-router-dom";
 import Header from "./Components/Header";
 import Pagination from "./Components/Pagination";
 import PokeDetails from "./Components/PokeDetails";
@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Link to="/" className="Link">
         <Header />
       </Link>
@@ -53,7 +53,7 @@ const App = () => {
         <Route path="/:name" exact component={PokeDetails} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
